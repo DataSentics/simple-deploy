@@ -1,0 +1,14 @@
+parameters:
+  dbxdeploy:
+    source:
+      notebooks:
+        baseDir: 'src/simpledeploy'
+        patterns:
+          - '**/*.py'
+    target:
+      workspace:
+        baseDir: '/{currentBranch}'
+    databricks:
+      host: 'https://westeurope.azuredatabricks.net'
+      token: '%env(DBX_TOKEN)%'
+      clusterId: ''

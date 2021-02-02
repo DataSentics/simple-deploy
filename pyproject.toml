@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "simple-deploy"
+version = "1.0"
+description = ""
+authors = ["Jiri Koutny <jirkakoutny@gmail.com>"]
+
+include = ["*.yaml"]
+
+packages = [
+    { include = "simpledeploy", from = "src" },
+]
+
+[tool.poetry.dependencies]
+python = ">=3.7.1,<4.0.0"
+
+[tool.poetry.dev-dependencies]
+dbx-deploy = ">=0.14.0b1"
+
+[pyfony.bootstrap]
+rootModuleName = "simpledeploy"
