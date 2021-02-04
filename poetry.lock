@@ -131,7 +131,7 @@ colorama = {version = "*", markers = "sys_platform == \"win32\""}
 
 [[package]]
 name = "console-bundle"
-version = "0.3.1"
+version = "0.3.2"
 description = "Console Bundle for the Pyfony Framework"
 category = "dev"
 optional = false
@@ -856,7 +856,7 @@ colorlog = [
     {file = "colorlog-4.7.2.tar.gz", hash = "sha256:18d05b616438a75762d7d214b9ec3b05d274466c9f3ddd92807e755840c88251"},
 ]
 console-bundle = [
-    {file = "console_bundle-0.3.1-py3-none-any.whl", hash = "sha256:37a253d55903fc4ee1ffe811b3d3a8d1f647caa29f3debed4a18cf75a72b3e97"},
+    {file = "console_bundle-0.3.2-py3-none-any.whl", hash = "sha256:ddcc101c833848128efe38e379c00a0c4b1f79d41862c0a4a4a81e4fa2daef76"},
 ]
 databricks-api = [
     {file = "databricks_api-0.6.0-py2.py3-none-any.whl", hash = "sha256:5ed697f59c6c3c09bd649f8cfaa1345d5e273de093b968b2542d9f7c8ef348de"},
