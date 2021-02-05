@@ -1,7 +1,6 @@
 #!/bin/bash -e
 
 PENVY_VERSION="1.0.6"
-BENVY_VERSION="1.0.1"
 
 resolve_conda_executable_path() {
   if hash conda 2>/dev/null; then
@@ -39,5 +38,4 @@ else
 fi
 
 $CONDA_BIN_DIR/pip install "penvy==$PENVY_VERSION"
-$CONDA_BIN_DIR/pip install "benvy==$BENVY_VERSION"
-$CONDA_BIN_DIR/benvy-init "$@"
+$CONDA_BIN_DIR/penvy-init "$@"
