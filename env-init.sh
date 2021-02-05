@@ -2,7 +2,6 @@
 
 PENVY_VERSION="1.0.6"
 BENVY_VERSION="1.0.1"
-POSSIBLE_PATHS_LIST_URL="https://raw.githubusercontent.com/pyfony/penvy/master/src/penvy/conda/conda_executable_paths.txt"
 
 resolve_conda_executable_path() {
   if hash conda 2>/dev/null; then
@@ -10,7 +9,7 @@ resolve_conda_executable_path() {
 
     CONDA_EXECUTABLE_PATH="conda"
   else
-    POSSIBLE_PATHS_LIST=$(curl --silent $POSSIBLE_PATHS_LIST_URL)
+    POSSIBLE_PATHS_LIST=$(cat "conda_executable_paths.txt")
 
     while IFS= read -r line; do
       FILE_PATH=$(sed -E "s|\~|$HOME|g" <<< $line)
